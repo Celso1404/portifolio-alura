@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    
+    :root {
+        --cor--primaria: #F5EFE7;
+        --cor--secundaria: #4F709C;
+        --cor-terciaria: #000080;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        box-sizing: border-box;
+        background-color: var(--cor--primaria);
+        color: var(--cor--secundaria);
+    }
+
+    .titulo-destaque {
+        color: var(--cor-terciaria);
+        
+    }
+
+    .cabecalho{
+        padding: 2% 0 0 10%;
+    }
+
+    .cabecalho_menu {
+        display: flex;
+        gap: 80px;
+    }
+
+    .cabecalho_menu_link {
+        padding: 24px;
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--cor-terciaria);
+        text-decoration: none;
+    }
+
+    .apresentacao {
+        padding: 3% 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .apresentacao__conteudo {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 2.25rem;
+        font-family: 'Bebas Neue', sans-serif;
+    }
+
+    .apresentacao__conteudo__paragrafo {
+        font-size: 1.18rem;
+    }
+
+    .apresentacao__links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .apresentacao__link_subtitulo{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .apresentacao__links__navegacao {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        border: 3px solid var(--cor--secundaria);
+        width: 50%;
+        text-align: center;
+        border-radius: 8px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 21.5px 0;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .apresentacao__links__link1:hover {
+        background-color: burlywood; 
+    }
+
+    .apresentacao__imagem {
+        width: 50%;
+    }
+
+    .apresentacao__rodape {
+        padding: 24px;
+        color: black;
+        background-color: var(--cor--secundaria);
+        text-align: center;
+        font-size: 1.06rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+    @media (max-width: 1200px) {
+        .cabecalho {
+            padding: 10%;
+        }
+
+    .cabecalho_menu {
+        justify-content: center;
+    }
+
+        .apresentacao {
+            flex-direction: column;
+            padding: 50%;
+        }
+        
+        .apresentacao__conteudo{
+            width: auto;
+        }
+    }
+
+    
